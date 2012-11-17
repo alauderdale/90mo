@@ -462,6 +462,7 @@ h2{
     position:relative;
     display:inline-block;
     width: 100%;
+    z-index: 100;
 }
 
 /* home */
@@ -629,7 +630,35 @@ h1.page-title-default{
     }
 }
 
+/* cal */
 
+.calendar{
+    float: right;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    position: relative;
+    padding-top:20px;
+    top: 456px;
+    margin-top: -456px;
+    z-index: 99;
+    height: 456px;
+    color:#fff;
+    padding:0 20px;
+    font-family:$lightFont;
+    .cal-inner{
+        margin-top:80px;
+    }
+    h2{
+        text-align:right;
+        padding-top:20px;
+        color:$green;
+    }
+}
+
+table.em-calendar td{
+    padding:7px!important;
+    color:#f2f2f2;
+}
 
 /* footer */
 

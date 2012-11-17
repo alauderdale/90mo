@@ -6,7 +6,14 @@ Template Name: Home
 
 <?php get_header(); ?>
 
-
+<div class="calendar">
+    <div class="right">
+        <h2 class="uppercase">Upcoming</h2>
+        <div class="cal-inner">
+        <?php echo do_shortcode("[events_calendar]"); ?>
+        </div>
+    </div>
+</div>
 <div class="slider">
             <div class="slider-wrapper theme-default">
                 <div id="slider" class="nivoSlider">
@@ -70,16 +77,22 @@ Template Name: Home
                 </div><!-- end 11 col -->
                 <div class="four-col right">
                     <div class="sidebar-widget row border-bottom">
-                        <h2>
-                            NEXT UP -AUG 22, 2012
-                            Course Title
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dut laoreet dolore.
-                        </p>
-                        <a class="padding-top" href="#">
+                        <?php
+                            echo EM_Events::output(
+                            array('orderby' => 'start_date',
+                            'limit' => '1',
+                            'format' => '
+
+                            <h2>NEXT UP- #M #d, #Y #_EVENTNAME</h2>
+                            <p>#_EVENTEXCERPT <a href="#_EVENTURL">See Details</a></p>
+
+                            <a class="padding-top" href="index.php?pagename=events">
                             All events
-                        </a>
+                            </a>
+                            '
+
+                        ) );
+                        ?>
                     </div>
                     <div class="sidebar-widget">
                         <h2 class="uppercase">
