@@ -20,10 +20,15 @@
   <?php wp_head(); ?>
 </head>
 <body>
+    <div class="login">
+      <div class="wrapped">
+        
+      </div>
+    </div>
     <div class="topbar wrapped">
         <div class="info right">
             <p class="left">Get free updates on professional development for yoga teachers.</p>
-            <a href="#" class="right">
+            <a href="#" class="right" id="open">
                 open
             </a>
             <div class="info-tri right">

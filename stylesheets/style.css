@@ -286,8 +286,13 @@ strong {
   font-family: "museo_sans_900regular";
 }
 
+/* line 288, ../sass/style.scss */
+.text-right {
+  text-align: right;
+}
+
 /* type */
-/* line 290, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 p {
   margin-bottom: 10px;
   font-size: 9pt;
@@ -295,13 +300,13 @@ p {
   color: #333333;
 }
 
-/* line 297, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 h1 {
   font-size: 22pt;
   margin-bottom: 20px;
 }
 
-/* line 302, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 h2 {
   font-size: 12pt;
   line-height: 150%;
@@ -309,34 +314,34 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* line 310, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .highlighted-content h2 {
   font-size: 14pt;
 }
 
-/* line 315, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .page h2, .post h2 {
   font-size: 16pt;
 }
 
 /* cols */
-/* line 323, ../sass/style.scss */
+/* line 327, ../sass/style.scss */
 .eleven-col {
   width: 640px;
 }
 
-/* line 326, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 .four-col {
   width: 180px;
 }
 
-/* line 330, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 .seven-col {
   width: 460px;
 }
 
 /* topbar */
-/* line 337, ../sass/style.scss */
+/* line 341, ../sass/style.scss */
 .topbar .info {
   background-color: #ff7a1f;
   padding: 5px 10px 5px 10px;
@@ -347,20 +352,20 @@ h2 {
   border-radius: 4px;
   font-size: 8pt;
 }
-/* line 342, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .topbar .info a {
   color: #fff;
   font-size: 7pt;
   margin-top: 5px;
 }
-/* line 347, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 .topbar .info p {
   margin-right: 200px;
   font-family: "museo_sans_500regular";
   margin-bottom: 0;
   color: #fff!important;
 }
-/* line 354, ../sass/style.scss */
+/* line 358, ../sass/style.scss */
 .topbar .info-tri {
   width: 15px;
   height: 15px;
@@ -376,7 +381,30 @@ h2 {
   transform: rotate(45deg);
 }
 
-/* line 369, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
+.login {
+  width: 100%;
+  height: 50px;
+  background-color: #ff7a1f;
+  display: none;
+  -webkit-transition-duration: linear 3s;
+  -moz-transition-duration: linear 3s;
+  -ms-transition-duration: linear 3s;
+  -o-transition-duration: linear 3s;
+  transition-duration: linear 3s;
+}
+
+/* line 380, ../sass/style.scss */
+.login-open {
+  display: block;
+  -webkit-transition-duration: linear 3s;
+  -moz-transition-duration: linear 3s;
+  -ms-transition-duration: linear 3s;
+  -o-transition-duration: linear 3s;
+  transition-duration: linear 3s;
+}
+
+/* line 386, ../sass/style.scss */
 .logo a {
   width: 271px;
   height: 78px;
@@ -384,60 +412,69 @@ h2 {
   display: block;
 }
 
-/* line 377, ../sass/style.scss */
+/* line 394, ../sass/style.scss */
 .main-nav {
   font-size: 8pt;
   margin-bottom: 10px;
   margin-top: -13px;
 }
-/* line 381, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 .main-nav p {
   font-family: "museo_sans_500regular";
   text-align: right;
   color: #fff!important;
   margin-bottom: 20px;
 }
-/* line 387, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 .main-nav ul {
   float: right;
 }
-/* line 389, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 .main-nav ul li {
   font-size: 16pt;
   margin-left: 40px;
   float: left;
   text-transform: uppercase;
 }
-/* line 394, ../sass/style.scss */
+/* line 411, ../sass/style.scss */
 .main-nav ul li a {
   color: #fff;
 }
-/* line 396, ../sass/style.scss */
+/* line 413, ../sass/style.scss */
 .main-nav ul li a:hover {
   color: #eee;
 }
-/* line 403, ../sass/style.scss */
+/* line 420, ../sass/style.scss */
 .main-nav .current_page_item a {
   color: #000;
 }
 
 /* slider */
-/* line 414, ../sass/style.scss */
+/* line 428, ../sass/style.scss */
+.theme-default .nivo-controlNav {
+  position: absolute;
+  z-index: 200;
+  margin-top: -82px;
+  margin-left: 63px;
+}
+
+/* line 435, ../sass/style.scss */
 .nivo-caption {
   height: 200px;
   background: none;
   bottom: 60px;
   opacity: 1;
 }
-/* line 419, ../sass/style.scss */
+/* line 440, ../sass/style.scss */
 .nivo-caption h1 {
   opacity: 1;
   font-family: "museo_sans_100regular";
   color: #fff;
   font-size: 30pt;
   margin-bottom: 20px;
+  width: 625px;
 }
-/* line 426, ../sass/style.scss */
+/* line 448, ../sass/style.scss */
 .nivo-caption a {
   color: #ff7a1f;
   font-family: "museo_sans_900regular";
@@ -459,25 +496,25 @@ h2 {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 436, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 .nivo-caption a:hover {
   background-color: #fff;
 }
 
 /* container */
-/* line 445, ../sass/style.scss */
+/* line 467, ../sass/style.scss */
 .container {
   background-color: #fff;
   display: block;
 }
 
-/* line 450, ../sass/style.scss */
+/* line 472, ../sass/style.scss */
 .inner {
   padding: 0 50px;
 }
 
 /* main */
-/* line 456, ../sass/style.scss */
+/* line 478, ../sass/style.scss */
 .main {
   padding: 15px;
   background-color: #fff;
@@ -486,22 +523,23 @@ h2 {
   display: block;
   position: relative;
   display: inline-block;
-  width: 100%;
+  width: 97.2%;
   z-index: 100;
+  padding-right: 60px;
 }
 
 /* home */
-/* line 470, ../sass/style.scss */
+/* line 494, ../sass/style.scss */
 .featured-block {
   width: 280px;
   margin-right: 30px;
   min-height: 400px;
 }
-/* line 474, ../sass/style.scss */
+/* line 498, ../sass/style.scss */
 .featured-block:nth-child(odd) {
   margin-right: 0;
 }
-/* line 478, ../sass/style.scss */
+/* line 502, ../sass/style.scss */
 .featured-block a img {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
@@ -511,48 +549,53 @@ h2 {
   margin-bottom: 10px;
   max-width: 280px;
 }
-/* line 482, ../sass/style.scss */
+/* line 506, ../sass/style.scss */
 .featured-block a img:hover {
   opacity: .9;
 }
 
+/* line 514, ../sass/style.scss */
+.featured-event {
+  min-height: 210px;
+}
+
 /* post */
-/* line 494, ../sass/style.scss */
+/* line 520, ../sass/style.scss */
 .post-index {
   background-color: #fff;
-  margin-top: -100px;
+  margin-top: -50px;
   z-index: 4;
   display: inline-block;
   padding: 20px;
 }
 
-/* line 502, ../sass/style.scss */
+/* line 528, ../sass/style.scss */
 .post {
   margin: 10px 0;
   padding: 10px 0 50px 0;
 }
-/* line 505, ../sass/style.scss */
+/* line 531, ../sass/style.scss */
 .post:first-of-type {
   margin-top: 0;
   padding-top: 0;
 }
-/* line 509, ../sass/style.scss */
+/* line 535, ../sass/style.scss */
 .post h1 {
   margin-bottom: 5px;
 }
-/* line 513, ../sass/style.scss */
+/* line 539, ../sass/style.scss */
 .post .post-meta p {
   color: #888888 !important;
 }
-/* line 517, ../sass/style.scss */
+/* line 543, ../sass/style.scss */
 .post ul {
   list-style: disc;
 }
-/* line 520, ../sass/style.scss */
+/* line 546, ../sass/style.scss */
 .post ol {
   list-style: decimal;
 }
-/* line 523, ../sass/style.scss */
+/* line 549, ../sass/style.scss */
 .post ol, .post ul {
   margin-bottom: 20px;
   margin-left: 40px;
@@ -560,60 +603,61 @@ h2 {
   color: #669900;
 }
 
-/* line 531, ../sass/style.scss */
+/* line 557, ../sass/style.scss */
 .post-featured-img {
   margin-bottom: 10px;
 }
-/* line 533, ../sass/style.scss */
+/* line 559, ../sass/style.scss */
 .post-featured-img img {
   width: 615px;
   height: auto;
 }
 
-/* line 539, ../sass/style.scss */
+/* line 565, ../sass/style.scss */
 .side-link {
   margin: 10px 0;
   padding: 10px 0;
   font-family: "museo_sans_500regular";
 }
-/* line 543, ../sass/style.scss */
+/* line 569, ../sass/style.scss */
 .side-link .cat-item {
   margin-bottom: 10px;
 }
-/* line 545, ../sass/style.scss */
+/* line 571, ../sass/style.scss */
 .side-link .cat-item:last-of-type {
   margin-bottom: 0;
 }
 
 /* single */
-/* line 553, ../sass/style.scss */
+/* line 579, ../sass/style.scss */
 .single-bg {
-  min-height: 150px;
+  min-height: 100px;
+  padding-top: 60px;
   background-color: #ff7a1f;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff7a1f), color-stop(100%, #ffc199));
-  background-image: -webkit-linear-gradient(top, #ff7a1f 0%, #ffc199 100%);
-  background-image: -moz-linear-gradient(top, #ff7a1f 0%, #ffc199 100%);
-  background-image: -ms-linear-gradient(top, #ff7a1f 0%, #ffc199 100%);
-  background-image: -o-linear-gradient(top, #ff7a1f 0%, #ffc199 100%);
-  background-image: linear-gradient(top, #ff7a1f 0%, #ffc199 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff7a1f), color-stop(100%, #ff9953));
+  background-image: -webkit-linear-gradient(top, #ff7a1f 0%, #ff9953 100%);
+  background-image: -moz-linear-gradient(top, #ff7a1f 0%, #ff9953 100%);
+  background-image: -ms-linear-gradient(top, #ff7a1f 0%, #ff9953 100%);
+  background-image: -o-linear-gradient(top, #ff7a1f 0%, #ff9953 100%);
+  background-image: linear-gradient(top, #ff7a1f 0%, #ff9953 100%);
 }
 
-/* line 558, ../sass/style.scss */
+/* line 586, ../sass/style.scss */
 .post-top {
   padding-bottom: 0px;
   margin-bottom: 20px;
 }
-/* line 561, ../sass/style.scss */
+/* line 589, ../sass/style.scss */
 .post-top h1 {
   margin-bottom: 20px;
 }
 
 /* sidebar */
-/* line 570, ../sass/style.scss */
+/* line 598, ../sass/style.scss */
 .blog-sidebar {
   margin-right: -20px;
 }
-/* line 572, ../sass/style.scss */
+/* line 600, ../sass/style.scss */
 .blog-sidebar h2 {
   margin-bottom: 0;
   line-height: 100%;
@@ -622,38 +666,38 @@ h2 {
 }
 
 /* page */
-/* line 583, ../sass/style.scss */
+/* line 611, ../sass/style.scss */
 .page img {
   margin: 20px 60px;
 }
-/* line 585, ../sass/style.scss */
+/* line 613, ../sass/style.scss */
 .page img.alignleft {
   margin-left: 0;
 }
-/* line 588, ../sass/style.scss */
+/* line 616, ../sass/style.scss */
 .page img.alignright {
   margin-right: 0;
 }
 
-/* line 594, ../sass/style.scss */
+/* line 622, ../sass/style.scss */
 h1.page-title {
   float: right;
   text-align: right;
   position: relative;
-  top: 90px;
-  right: 40px;
+  top: 120px;
+  right: 80px;
   margin-top: -73px;
   color: #fff;
   font-size: 40pt;
 }
 
-/* line 605, ../sass/style.scss */
+/* line 633, ../sass/style.scss */
 h1.page-title-default {
   color: #fff;
   font-size: 40pt;
 }
 
-/* line 610, ../sass/style.scss */
+/* line 638, ../sass/style.scss */
 .page-bg {
   padding-bottom: 100px;
   padding-top: 40px;
@@ -667,16 +711,16 @@ h1.page-title-default {
   background-image: -o-linear-gradient(top, #ff7a1f 0%, #ffc199 100%);
   background-image: linear-gradient(top, #ff7a1f 0%, #ffc199 100%);
 }
-/* line 617, ../sass/style.scss */
+/* line 645, ../sass/style.scss */
 .page-bg h2 {
   font-size: 20pt;
   line-height: 100%;
 }
-/* line 621, ../sass/style.scss */
+/* line 649, ../sass/style.scss */
 .page-bg h3 {
   font-size: 16pt;
 }
-/* line 624, ../sass/style.scss */
+/* line 652, ../sass/style.scss */
 .page-bg h4 {
   text-transform: uppercase;
   text-align: center;
@@ -686,7 +730,7 @@ h1.page-title-default {
 }
 
 /* cal */
-/* line 635, ../sass/style.scss */
+/* line 663, ../sass/style.scss */
 .calendar {
   float: right;
   background-color: rgba(0, 0, 0, 0.6);
@@ -701,72 +745,93 @@ h1.page-title-default {
   padding: 0 20px;
   font-family: "museo_sans_100regular";
 }
-/* line 648, ../sass/style.scss */
+/* line 676, ../sass/style.scss */
 .calendar .cal-inner {
   margin-top: 80px;
 }
-/* line 651, ../sass/style.scss */
+/* line 679, ../sass/style.scss */
 .calendar h2 {
   text-align: right;
   padding-top: 20px;
   color: #669900;
+  font-size: 16pt;
 }
 
-/* line 658, ../sass/style.scss */
+/* line 687, ../sass/style.scss */
 table.em-calendar td {
   padding: 7px!important;
   color: #f2f2f2;
 }
+/* line 690, ../sass/style.scss */
+table.em-calendar td.month_name {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 12pt;
+}
+
+/* line 695, ../sass/style.scss */
+table.em-calendar td.eventful a {
+  color: white!important;
+  padding: 9px;
+  background-image: url(../images/cal_bg.png);
+  background-position: 8px 1px;
+  background-repeat: no-repeat;
+  padding-right: 12px;
+}
+
+/* line 706, ../sass/style.scss */
+.eventless-today {
+  background: none!important;
+}
 
 /* footer */
-/* line 665, ../sass/style.scss */
+/* line 712, ../sass/style.scss */
 footer {
   background-color: #59595b;
   display: inline-block;
   padding-bottom: 300px!important;
 }
-/* line 669, ../sass/style.scss */
+/* line 716, ../sass/style.scss */
 footer .follow {
   margin-right: 5px;
   float: left;
 }
-/* line 673, ../sass/style.scss */
+/* line 720, ../sass/style.scss */
 footer .footer-descrip {
   width: 400px;
 }
-/* line 676, ../sass/style.scss */
+/* line 723, ../sass/style.scss */
 footer .footer-email {
   margin-bottom: 10px;
 }
-/* line 679, ../sass/style.scss */
+/* line 726, ../sass/style.scss */
 footer h2 {
   margin-bottom: 10px;
   color: #f2f2f2!important;
   font-family: "museo_sans_100regular";
   font-size: 10pt;
 }
-/* line 685, ../sass/style.scss */
+/* line 732, ../sass/style.scss */
 footer p {
   font-family: "museo_sans_100regular";
   color: #f2f2f2!important;
   font-size: 8pt;
 }
-/* line 691, ../sass/style.scss */
+/* line 738, ../sass/style.scss */
 footer ul li {
   font-family: "museo_sans_100regular";
   margin-bottom: 5px;
   font-size: 8pt;
 }
-/* line 696, ../sass/style.scss */
+/* line 743, ../sass/style.scss */
 footer ul.social {
   float: left;
 }
-/* line 698, ../sass/style.scss */
+/* line 745, ../sass/style.scss */
 footer ul.social li {
   float: left;
   margin-right: 5px;
 }
-/* line 702, ../sass/style.scss */
+/* line 749, ../sass/style.scss */
 footer ul.social li a.twitter {
   background-image: url(../images/twitter.png);
   background-repeat: no-repeat;
@@ -775,7 +840,7 @@ footer ul.social li a.twitter {
   float: left;
   display: block;
 }
-/* line 710, ../sass/style.scss */
+/* line 757, ../sass/style.scss */
 footer ul.social li a.facebook {
   background-image: url(../images/facebook.png);
   background-repeat: no-repeat;
@@ -784,7 +849,7 @@ footer ul.social li a.facebook {
   float: left;
   display: block;
 }
-/* line 718, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 footer ul.social li a.linkedin {
   background-image: url(../images/linkd.png);
   background-repeat: no-repeat;
@@ -793,27 +858,27 @@ footer ul.social li a.linkedin {
   float: left;
   display: block;
 }
-/* line 726, ../sass/style.scss */
+/* line 773, ../sass/style.scss */
 footer ul.social li a:hover {
   opacity: .8;
 }
-/* line 735, ../sass/style.scss */
+/* line 782, ../sass/style.scss */
 footer .footer-bottom-nav ul {
   margin-bottom: 5px;
   float: left;
 }
-/* line 738, ../sass/style.scss */
+/* line 785, ../sass/style.scss */
 footer .footer-bottom-nav ul li {
   float: left;
   margin-right: 15px;
   padding-right: 15px;
   border-right: #999 solid 1px;
 }
-/* line 743, ../sass/style.scss */
+/* line 790, ../sass/style.scss */
 footer .footer-bottom-nav ul li:last-of-type {
   border: none;
 }
-/* line 747, ../sass/style.scss */
+/* line 794, ../sass/style.scss */
 footer .footer-bottom-nav ul a {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
@@ -823,11 +888,11 @@ footer .footer-bottom-nav ul a {
   color: #999!important;
   font-size: 8pt;
 }
-/* line 751, ../sass/style.scss */
+/* line 798, ../sass/style.scss */
 footer .footer-bottom-nav ul a:hover {
   color: #fff!important;
 }
-/* line 756, ../sass/style.scss */
+/* line 803, ../sass/style.scss */
 footer .footer-bottom-nav p {
   color: #999!important;
 }

@@ -285,6 +285,10 @@ strong{
     font-family:$boldestFont;
 }
 
+.text-right{
+    text-align:right;
+}
+
 /* type */
 
 p{
@@ -365,6 +369,19 @@ h2{
 
 // header
 
+.login{
+    width: 100%;
+    height:50px;
+    background-color:$primaryOrange;
+    display:none;
+    @include transition-duration(linear 3s);
+}
+
+.login-open{
+    display:block;
+    @include transition-duration(linear 3s);
+}
+
 .logo{
     a{
         width: 271px;
@@ -408,8 +425,12 @@ h2{
 
 /* slider */
 
-.slider{
-}
+.theme-default .nivo-controlNav {
+    position: absolute;
+    z-index:200;
+    margin-top: -82px;
+    margin-left: 63px;
+    }
 
 .nivo-caption {
     height:200px;
@@ -422,6 +443,7 @@ h2{
         color:#fff;
         font-size:30pt;
         margin-bottom:20px;
+        width: 625px;
     }
     a{
         color:$primaryOrange;
@@ -461,11 +483,13 @@ h2{
     display:block;
     position:relative;
     display:inline-block;
-    width: 100%;
+    width: 97.2%;
     z-index: 100;
+    padding-right: 60px;
 }
 
 /* home */
+
 
 .featured-block{
     width:280px;
@@ -487,13 +511,15 @@ h2{
     }
 }
 
-
+.featured-event{
+    min-height:210px;
+}
 
 /* post */
 
 .post-index{
     background-color:#fff;
-    margin-top:-100px;
+    margin-top:-50px;
     z-index: 4;
     display:inline-block;
     padding:20px;
@@ -551,9 +577,11 @@ h2{
 /* single */
 
 .single-bg{
-    min-height:150px;
-    @include linear-gradient(top, #ff7a1f 0%,#FFC199 100%);
+    min-height:100px;
+    padding-top:60px;
+    @include linear-gradient(top, #ff7a1f 0%,#ff9953 100%);
 }
+
 
 .post-top{
     padding-bottom:0px;
@@ -595,8 +623,8 @@ h1.page-title{
     float: right;
     text-align:right;
     position:relative;
-    top:90px;
-    right:40px;
+    top:120px;
+    right:80px;
     margin-top:-73px;
     color:#fff;
     font-size:40pt;
@@ -652,12 +680,31 @@ h1.page-title-default{
         text-align:right;
         padding-top:20px;
         color:$green;
+        font-size:16pt;
     }
 }
 
 table.em-calendar td{
     padding:7px!important;
     color:#f2f2f2;
+    &.month_name{
+        border-bottom:1px solid rgba(255,255,255,.2);
+        font-size:12pt;
+    }
+}
+table.em-calendar td.eventful a {
+    color: white!important;
+    padding: 9px;
+    background-image: url(../images/cal_bg.png);
+    background-position: 8px 1px;
+    background-repeat: no-repeat;
+    padding-right: 12px;
+}
+
+
+
+.eventless-today{
+    background:none!important;
 }
 
 /* footer */

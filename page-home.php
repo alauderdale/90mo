@@ -76,7 +76,7 @@ Template Name: Home
                     </div>
                 </div><!-- end 11 col -->
                 <div class="four-col right">
-                    <div class="sidebar-widget row border-bottom">
+                    <div class="sidebar-widget featured-event row border-bottom">
                         <?php
                             echo EM_Events::output(
                             array('orderby' => 'start_date',
